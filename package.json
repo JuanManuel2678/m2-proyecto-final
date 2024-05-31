@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "proyecto-final-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": " nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.9",
+    "nodemon": "^3.1.2",
+    "standard": "^17.1.0"
+  }
+}
