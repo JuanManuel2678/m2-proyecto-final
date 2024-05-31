@@ -205,6 +205,16 @@
         }
       }
     },
+    "/api/user/categoria": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/user": {
       "post": {
         "description": "",
