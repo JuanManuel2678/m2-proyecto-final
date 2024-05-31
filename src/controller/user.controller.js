@@ -1,9 +1,13 @@
 import { pool } from '../db.js'
 
+export const userCategoria = async (req, res) => {
+  const [rows] = await pool.query('SELECT * FROM categoria_post')
+  res.json(rows)
+}
 export const createUser = async (req, res) => {
   try {
     const { idRoles, nombre, apellido, correo, contraseña } = req.body
-    const [rows] = await pool.query('INSERT INTO usuarios (idRoles, nombre, apellido, correo, contraseña ) VALUES (?,?,?,?,?)', [nombre, apellido, correo, contraseña])
+    const [rows] = await pool.query('INSERT INTO usuarios (idRoles, nombre, apellido, correo, contraseña ) VALUES (2,?,?,?,?)', [nombre, apellido, correo, contraseña])
     console.log(req.body)
     res.send({
       idUSer: rows.insertId,
